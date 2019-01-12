@@ -1,7 +1,7 @@
 {
   "name": "uni-time-line",
   "description": "A Vue.js project",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "depsi <sidepeng@163.com>",
   "license": "MIT",
   "private": false,
@@ -14,13 +14,12 @@
     "src"
   ],
   "scripts": {
-    "dev": "node build/dev-server.js",
-    "start": "node build/dev-server.js",
-    "build": "node build/build.js"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yanzilingyan/vue.git"
+    "url": "https://github.com/zoedepsi/uni-time-line-widget"
   },
   "keywords": [
     "vue",
